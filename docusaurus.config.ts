@@ -5,18 +5,19 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: '1D6 Docs',
   tagline: 'Documentation for everything from APIs to how to make a mod.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://OneDSix.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/wiki/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'OneDSix', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'OneDSix',
+  projectName: 'docs',
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -32,7 +33,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://example.com',
+          editUrl: 'https://github.com/OneDSix/wiki/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -48,7 +49,7 @@ const config: Config = {
       title: '1D6 Docs',
       logo: {
         alt: '1D6 Logo',
-        src: 'img/logo.svg',
+        src: 'img/icon.png',
       },
       items: [
         {
@@ -68,7 +69,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/OneDSix/wiki',
           label: 'Edit on GitHub',
           position: 'right',
         },
@@ -82,11 +83,11 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://example.com',
+              href: 'https://discord.gg/5BhZKVn8bs',
             },
             {
               label: 'Matrix',
-              href: 'https://example.com',
+              href: 'https://matrix.to/#/!QlLHLtAHIewcitWaxW:matrix.org?via=matrix.org',
             },
           ],
         },
@@ -95,7 +96,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/OneDSix',
             },
             {
               label: 'Main Site',

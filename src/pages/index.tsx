@@ -26,26 +26,31 @@ function HomepageFeatures() {
       <div className={styles.buttons}>
         <p style={{fontSize:"20px",textAlign:"center"}}>
           This page contains all the docs for 1D6, as well as all the side projects.<br />
-          Below you can find all the resources a new 1D6 developer will need, but don't fear asking questions in our Discord or Matrix!<br />
+          Below you can find all the resources a new 1D6 developer will need, but don't fear asking questions in our Discord or Matrix!
         </p>
       </div>
       <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Modding and Internals
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            1D6 Accounts and Mods API
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Javascript Modding SDK
-          </Link>
-        </div>
+        <Link
+          className="button button--secondary button--lg"
+          to="/docs/intro">
+          Modding and Internals
+        </Link>
+        <Link
+          className="button button--secondary button--lg"
+          to="/docs/intro">
+          1D6 Accounts and Mods API
+        </Link>
+        <Link
+          className="button button--secondary button--lg"
+          to="/docs/intro">
+          Javascript Modding SDK
+        </Link>
+      </div><br />
+      <div className={styles.buttons}>
+        <p style={{fontSize:"20px",textAlign:"center"}}>
+          If you're looking for the Javadocs, they are located <Link to="https://jitpack.io/com/github/OneDSix/onedsix/main-SNAPSHOT/javadoc/">here</Link>.
+        </p>
+      </div>
     </div>
   )
 }
