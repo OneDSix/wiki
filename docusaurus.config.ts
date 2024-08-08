@@ -1,6 +1,7 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
   title: '1D6 Docs',
@@ -24,7 +25,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','fr-CA','vi'],
+    locales: ['en', 'fr-CA', 'vi'],
   },
 
   presets: [
@@ -33,7 +34,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/OneDSix/wiki/tree/main',
+          editUrl: 'https://github.com/OneDSix/wiki/tree/main'
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -41,10 +42,11 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: '1D6 Docs',
       logo: {
@@ -60,7 +62,7 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'apiSidebar',
+          sidebarId: 'apiDocsSidebar',
           position: 'left',
           label: 'REST API',
         },
@@ -104,13 +106,30 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Shortcuts',
+          items: [
+            {
+              label: 'API Docs',
+              href: '/docs/api/intro',
+            },
+            {
+              label: 'Java Mods',
+              href: '/docs/mods/jvm',
+            },
+            {
+              label: 'JS Mods',
+              href: '/docs/mods/js',
+            },
+          ],
+        },
       ],
       copyright: `Copyright ©${new Date().getFullYear()} 1D6 and Contributors. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['java','csharp','json','kotlin','typescript','groovy','scala'],
+      additionalLanguages: ['java', 'csharp', 'json', 'kotlin', 'typescript', 'groovy', 'scala', 'shell-session'],
     },
   } satisfies Preset.ThemeConfig,
 };

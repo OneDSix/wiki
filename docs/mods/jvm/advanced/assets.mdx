@@ -1,0 +1,48 @@
+---
+title: The Asset Structure
+---
+
+:::danger Not Yet Written!
+
+TODO
+
+:::
+
+The Canary version of Docusarus added support for [Mermaid.js](https://mermaid.js.org/intro/), a tool that allow the graphics below to be made very easily.\
+This page will use Mermaid heavily.
+
+A simple [flow chart](https://mermaid.js.org/syntax/flowchart.html)
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+A [class diagram](https://mermaid.js.org/syntax/classDiagram.html)
+```mermaid
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```

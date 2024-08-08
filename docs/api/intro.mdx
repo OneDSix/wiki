@@ -138,31 +138,33 @@ TODO
 :::note Not The Modding SDK!
 
 This is not the JS Modding SDK, this is for interacting with the 1D6 API via Javascript.\
-While they are compatible, and even included inside the Modding SDK, they are not the same thing.
+While they are compatible, this package even being included inside the Modding SDK, they are not the same thing.\
+If you're looking for the modding SDK, [click here](/docs/mods/js/).
 
 :::
 
 <Tabs queryString="manager">
 <TabItem value="npm" label="NPM">
-:::danger Not Yet Written!
+:::info Not on NPM!
 
-TODO
+As of right now the package has not been posted to NPM yet.\
+For now, just import straight from the repo, we will notify you went it has been posted, but this should continue to work even after the NPM package has been released.
 
 :::
+```shell
+npm install --save OneDSix/1d6-api#jsdk
+```
 </TabItem>
 <TabItem value="yarn" label="Yarn">
-:::danger Not Yet Written!
+:::info Not on NPM!
 
-TODO
-
-:::
-</TabItem>
-<TabItem value="deno" label="Deno">
-:::danger Not Yet Written!
-
-TODO
+As of right now the package has not been posted to NPM yet.\
+For now, just import straight from the repo, we will notify you went it has been posted, but this should continue to work even after the NPM package has been released.
 
 :::
+```shell
+yarn add OneDSix/1d6-api#jsdk
+```
 </TabItem>
 </Tabs>
 
@@ -197,24 +199,25 @@ Don't forget to install the needed dependencies for webpack!
 
 <Tabs queryString="manager">
 <TabItem value="npm" label="NPM">
-
+```shell
+npm install webpack webpack-cli ts-loader --save-dev
+```
 </TabItem>
 <TabItem value="yarn" label="Yarn">
-
-</TabItem>
-<TabItem value="deno" label="Deno">
-
+```shell
+yarn add webpack webpack-cli ts-loader
+```
 </TabItem>
 </Tabs>
 
 </TabItem>
 <TabItem value="curl" label="Raw HTTP (CUrl)">
 
-:::danger Not Yet Written!
-
-TODO
-
-:::
+No installs are needed, just make sure you have CUrl installed on your system using this command.
+```shell
+curl -V
+```
+This section will use CUrl, but you can easily use another HTTP client, even a browser if you like.
 
 </TabItem>
 </Tabs>

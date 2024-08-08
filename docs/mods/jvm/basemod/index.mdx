@@ -1,0 +1,82 @@
+---
+title: Modding with Basemod
+sidbar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import DocCardList from '@theme/DocCardList';
+
+Basemod is a large content and utility mod created by the 1D6 team and contributors so mod developers dont have to write everything themselves.
+
+All the content in Basemod was separated for 2 reasons:
+- Separation of concerns; 1D6 is already very large, so separating out all the content is probably the best option
+- 1D6 by itself is meant to be a blank slate, with very few "solid" hooks, as its meant to be heavily modified using Mixins, Reflection, Java absurdity, and in some scenarios entire forks
+
+There are currently 4 modules, listed [here](#all-basemod-modules) and below.
+
+<DocCardList />
+
+## Modules Explained
+
+Each module has a purpose, some basic configs, and a few event handlers for when the module is loaded, enabled, disabled, or otherwise modified.
+Some modules requires other modules as well,
+
+Below is a basic example on how to enable, disable, and change the configs of a Basemod Module; in this case the `consumeables` module.
+<Tabs groupId="languages" queryString>
+<TabItem value="java" label="Java" default>
+
+Editing the module's configs
+```java
+```
+
+Enabling the module
+```java
+```
+
+Disabling the module
+```java
+```
+
+</TabItem>
+<TabItem value="kotlin" label="Kotlin">
+
+Editing the module's configs
+```kotlin
+```
+
+Enabling the module
+```kotlin
+```
+
+Disabling the module
+```kotlin
+```
+
+</TabItem>
+<TabItem value="scala" label="Scala" default>
+
+Editing the module's configs
+```scala
+```
+
+Enabling the module
+```scala
+```
+
+Disabling the module
+```scala
+```
+
+</TabItem>
+</Tabs>
+
+### All Basemod Modules
+
+|Name        |Description|Internal Name|Enabled by Default|Links|Added|Required Modules|
+|:-----------|:------------------------------------------------------------------------------------|:-----------|:--|:---|:----|:---------------|
+|Consumables    |Food and Drink items and abstracts, as well as a `AbstractNutrition` attribute.   |`consume`   |:ballot-check: |Source, Javadoc, Tutorial|1.0.0|`entities`,`units`|
+|Entities       |Uses LibGDX's Ashley library for entity handling.                                 |`entities`  |✔ |Source, Javadoc, Tutorial, [Ashley](https://github.com/libgdx/ashley)|1.0.0|`units`|
+|SI Units       |                                                                                  |`si_units`  |✔ |Link|1.0.0|`gm_units`|
+|Game Units     |Basic units for most of the modules.                                              |`gm_units`  |✔ |Link|1.0.0|None|
+|Energy         |Basic Energy units and                                                            |`energy`    |✔ |Link|1.0.0|`units`|

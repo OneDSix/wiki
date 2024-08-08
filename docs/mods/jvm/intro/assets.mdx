@@ -1,0 +1,69 @@
+---
+sidebar_position: 2
+title: Your first Assets
+---
+
+# Assets
+
+Assets are the core building blocks of 1D6, doing everything from holding data to being the object that the player controls.
+
+If you want a more in-depth explaination of the Asset structure and why it was made that way, check out [The Asset Structure](/docs/mods/jvm/advanced/assets).
+Please be warned, it may be a little complex.
+
+## Creating your first Assets
+
+### Basic Item
+
+:::danger Not Yet Written!
+
+TODO
+
+:::
+
+### Basic Consumeable
+
+:::danger Not Yet Written!
+
+TODO
+
+:::
+
+### Making your assets visible
+
+By default, any assets you make are not visible to any other mods, and are isolated to the side that it was placed on (client, server, or both).
+If you want to allow other mods to interact with your assets (intensionally, at least) then follow this section.
+
+:::danger Not Yet Written!
+
+TODO
+
+:::
+
+## Interacting with other assets
+
+You can do this in 3 ways:
+
+### Via the Registry
+
+1D6 has a global registry, which is a list of all the assets in the game, with their `Identifier`, which contains a human-friendly name and the class that this is refering to.
+
+:::danger Not Yet Written!
+
+TODO
+
+:::
+
+### Via Mixins / Reflection
+
+This is generally the less perferable option, but if the mod creator didnt add the asset to the registry for some reason, and you know where the class exists, this is certainly an option.
+
+:::danger Not Yet Written!
+
+TODO
+
+:::
+
+### Via the Asset's API(s)
+
+Some mods have their own APIs for accessing their assets.
+We wont explain how to access them
