@@ -32,17 +32,17 @@ function HomepageFeatures() {
       <div className={styles.buttons}>
         <Link
           className="button button--secondary button--lg"
-          to="/docs/intro">
-          Modding and Internals
+          to="/docs/mods/jvm/intro">
+          JVM Modding Intro
         </Link>
         <Link
           className="button button--secondary button--lg"
-          to="/docs/intro">
+          to="/docs/api/intro">
           1D6 Accounts and Mods API
         </Link>
         <Link
           className="button button--secondary button--lg"
-          to="/docs/intro">
+          to="/docs/mods/jvm/script">
           Javascript Modding SDK
         </Link>
       </div><br />
